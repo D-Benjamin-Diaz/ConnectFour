@@ -1,18 +1,20 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+# Connect Four
+ 
+Two-player Connect Four, played in the console.
+ 
+Standard 6-row by 7-column board. Players alternate dropping pieces into a
+column; first to connect four in a row (horizontal, vertical, or diagonal)
+wins. Detects a tie if the board fills with no winner.
+ 
+## Run it
+ 
+```
+javac src/ConnectFour.java -d bin
+java -cp bin ConnectFour
+```
+ 
+## Notes
+ 
+Board state and win detection are done with a plain `char[][]` grid — no
+external dependencies.
+ 
